@@ -3,23 +3,8 @@
 
 <head>
     <title>Starry Sky</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <style type="text/css">
-        body {
-            background: #000;
-            overflow: hidden;
-        }
-        
-        .star {
-            background: #fff;
-            display: block;
-            border-radius: 0%;
-            position: absolute;
-            animation: flash;
-            animation-duration: 8s;
-            animation-iteration-count: infinite;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/stylecard.css">
+
 </head>
 
 <body>
@@ -27,7 +12,7 @@
         let stars = 1600;
         let size = {
             min: 1,
-            max: 4
+            max: 10
         }
 
         document.write("<p class='star'></p>".repeat(stars));
@@ -41,9 +26,24 @@
                 document.getElementsByClassName('star')[i].style.width;
         }
     </script>
+    <!-- tarjeta -->
+    <div class="nutshell">
+        <div class="cardmain">
+            <div class="nutshell">
+
+            </div>
+            <div class="estrella">
+                <img class="estrella" src="./assets/estrella.png" alt="">
+            </div>
+            <div class="triangle0"></div>
+            <div class="triangle1"></div>
+            <div class="triangle2"></div>
+            <div class="chunk"></div>
+            <div class="triangle3"></div>
 
 
-
+        </div>
+    </div>
 </body>
 
 </html>
